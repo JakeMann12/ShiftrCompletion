@@ -12,7 +12,7 @@ def generate_selenium_string(row):
     def find_previous_date(day_name, weeks_ago):
         day_dict = {"Monday": 1,"Tuesday": 2,"Wednesday": 3,"Thursday": 4,"Friday": 5}
         adjusted_date = datetime.now() - timedelta(weeks=weeks_ago)
-        target_day_num = day_dict[day_name]
+        target_day_num = day_dict[day_name.capitalize()]
         # Calculate the difference in days and adjust
         days_difference = (target_day_num - adjusted_date.isoweekday() + 7) % 7
         if days_difference == 0:

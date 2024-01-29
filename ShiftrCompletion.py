@@ -78,7 +78,7 @@ def login_to_shiftr():
     # Send password details
     password.send_keys(getpassword())
 
-    input('Now login to your Duke account- Hit Enter when done')
+    input('Now, select your Duo method, accept it, and click login. Hit enter when you are on the MAIN shiftr page.')
 
     xclick('//*[@id="navbar"]/div/a[3]') #Hours Tab
 
